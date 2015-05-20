@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="lesson3.master.cs" Inherits="comp2007_lesson3_wed.lesson3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Lesson 3</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!--start navbar-->
+        <nav id="nav1" class="navbar"> 
+        <ul>
+            <li><a href="default.aspx">Home</a></li>
+            <li><a href="blank.aspx">Blank</a></li>
+            <li><a href="tip.aspx">Tip</a></li>  
+        </ul>    
+    </nav> 
+    <!--end navbar-->
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <!--start footer-->
+    <footer>
+        @2015 on a Wednesday afternoon
+        <asp:Label ID="lblDate" runat="server" />
+    </footer>
+    <!--end footer-->
+    </form>
+</body>
+</html>
